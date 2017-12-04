@@ -1,0 +1,26 @@
+doctype html
+html
+  include includes/head.pug
+  body
+    div(class='gtco-loader')
+    div(id='page')
+      include includes/nav.pug
+      include includes/header.pug
+      mixin member(members)
+        div(class="gtco-section")
+          div(class="gtco-container")
+            div(class="row")
+              div(class="col-md-12")
+                div(class="owl-carousel owl-carousel-carousel")
+                  each member in members.length ? members : ['No members available']
+                    div(class="item")
+                      div(class="gtco-staff")
+                        a(href="#")
+                          img(src=member.image alt="" class="img-responsive")
+                      h2=member.name
+                      p(class="role")=member.role
+                      p=member.description
+      +member(list_members)
+      include includes/footer.pug
+      include includes/go-to-top.pug
+      include includes/scripts.pug

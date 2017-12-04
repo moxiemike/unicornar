@@ -1,0 +1,50 @@
+doctype html
+html
+  include includes/head.pug
+  body
+  div(class='gtco-loader')
+  div(id='page')
+    include includes/nav.pug
+    header(role='banner')
+    div(class="fullscreen-bg")
+        div(class="row")
+          div(class="col-md-6 col-md-offset-2 col-xs-8 col-xs-offset-1 header-msg")
+            h1 Expand your professional world.
+    div(id='gtco-header' class='gtco-interim hidden-xs')
+      div(class="row")
+        div(class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-2")
+          h1 Experience the power of AR in match making through UnicornAR 
+    
+    mixin service(title, description, top, bottom)
+      div(class="col-md-5 col-md-offset-1")
+        div(class="row")
+          div(class="col-md-12 col-sm-12 service-wrap")
+            div(class="service")
+              h3
+                i(class="ti-control-record")
+                = title
+              p= description
+          
+    div(class="gtco-services")
+      div(class="gtco-container")
+        div(class="row row-pb-md")
+          +service("Connect", "Find and connect with like minded fellows easily. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "", "true")
+          div(class="col-md-5 col-md-offset-1 gtco-heading text-center" style="margin-top: 2em")
+            h2 Connect with people that want to connect with you.
+
+    div(class="gtco-services gtco-alternate")
+      div(class='gtco-container')
+        div(class='row')
+          div(class='col-md-5 col-md-offset-1 gtco-heading text-center')
+            h2 Easy access to tech events wherever you go.
+          +service("Easy access", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    
+    div(class="gtco-services")
+      div(class='gtco-container')
+        div(class='row')
+          +service("Grow", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+          div(class='col-md-5 col-md-offset-1 gtco-heading text-center' style="margin-top: 2em")
+            h2 Grow your network of professionals through AR.
+    include includes/footer.pug
+    include includes/go-to-top.pug
+    include includes/scripts.pug
