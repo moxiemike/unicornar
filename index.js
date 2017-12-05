@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const app = express()
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3030
 
 // app settings
 app.set('view engine', 'pug')

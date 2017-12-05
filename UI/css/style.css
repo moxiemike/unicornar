@@ -447,7 +447,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   left: 0;
   top: -0.1em;
-  color: #FFE366;
+  color: #4D6BCE;
   font-size: 22px !important;
 }
 .gtco-services .service h3 .tags i {
@@ -849,7 +849,7 @@ form label {
   margin-bottom: 30px !important;
   margin-top: 30px !important;
   color: #fffde7;
-  font-weight: 100;
+  font-weight: 300;
 }
 @media screen and (max-width: 768px) {
   #gtco-header h1 {
