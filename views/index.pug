@@ -4,12 +4,9 @@ html
   body
   div(class='gtco-loader')
   div(id='page')
-    include includes/nav.pug
     header(role='banner')
     div(class="fullscreen-bg")
-        div(class="row")
-          div(class="col-md-6 col-md-offset-2 col-xs-8 col-xs-offset-1 header-msg")
-            h1 Expand your professional world.
+      include includes/nav.pug
     div(id='gtco-header' class='gtco-interim hidden-xs')
       div(class="row")
         div(class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-2")
@@ -27,7 +24,7 @@ html
           
     div(class="gtco-services")
       div(class="gtco-container")
-        div(class="row row-pb-md")
+        div(class="row")
           +service("Connect", "Find and connect with like minded fellows easily. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "", "true")
           div(class="col-md-5 col-md-offset-1 gtco-heading text-center" style="margin-top: 2em")
             h2 Connect with people that want to connect with you.
